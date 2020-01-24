@@ -7,7 +7,7 @@ import logger from 'redux-logger'
 
 import SmurfList from './SmurfList'
 import { Reducer } from '../reducers/Reducer'
-import AddSmurf from "./AddSmurf";
+import SmurfForm from "./SmurfForm";
 
 export const store = createStore(Reducer, applyMiddleware(thunk, logger));
 
@@ -20,7 +20,7 @@ class App extends Component {
         <div>Start inside of your `src/index.js` file!</div>
         <div>Have fun!</div>
         <SmurfList />
-        <AddSmurf />
+        <SmurfForm />
       </div>
     );
   }
